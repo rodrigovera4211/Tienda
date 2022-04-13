@@ -1,0 +1,15 @@
+.Titulo { display: block;
+width: 150px;
+padding: 30px;
+margin: 30px;
+font-size: 10px;
+background-color: grey;
+border: 1px solid red;
+border-radius: 10px;
+    }
+
+.items{
+    
+font-size: 30px;
+
+   }

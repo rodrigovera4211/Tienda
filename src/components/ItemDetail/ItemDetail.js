@@ -6,17 +6,17 @@ import './ItemDetail.css'
 import CartContext from '../../context/CartContext'
 
 const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
-    const [quantity, setQuantity] = useState(0)
+    // const [quantity, setQuantity] = useState(0)
 
     // const { cart, setCart } = useContext(CartContext)
     // console.log(cart)
     // console.log(setCart)
 
-    const { addItem } = useContext(CartContext)
+    const { addItem,isInCart } = useContext(CartContext)
 
     const handleOnAdd = (count) => {
         console.log('agregue al carrito')
-        setQuantity(count)
+        // setQuantity(count)
         // setCart([...cart, {id, name, price, count}])
         addItem({ id, name, price}, count)
     }
@@ -44,7 +44,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
                 </p>
             </section>           
             <footer className='ItemFooter'>
-                {quantity === 0 ? <ItemCount onAdd={handleOnAdd}/> : <Link to='/cart' className='Option'>Ir al carrito</Link>}
+                {isInCart(id) ?   <Link to='/cart' className='Option'>Ir al carrito</Link> : <ItemCount onAdd={handleOnAdd}/> }
                 
             </footer>
         </article>

@@ -5,7 +5,14 @@ import { Link } from 'react-router-dom'
 
 const Cart = () => {
 
-    const { cart, clearCart, getPrice, removeItem } = useContext(CartContext)
+    const { cart, clearCart, getPrice, removeItem , getQuantity } = useContext(CartContext)
+
+    if (getQuantity()===0) {
+        return( <h1>Selecciona nuevos productos</h1> 
+
+        )
+
+    }
 
     return (
         <div className="Titulo">
@@ -20,10 +27,10 @@ const Cart = () => {
                             </tbody>       
                 </table>
                 <div className="">
-                <button onClick={()=>console.log("Usted abono correctamente ")} className="botonesTablaPagar">Pagar</button>
+                <button onClick={()=>console.log("Usted abono correctamente ")} className="">Terminar compra</button>
                 </div>
                 <div className="">
-                <Link to={'/'} className="linkContinuarComprando">Continuar comprando</Link>
+                <Link to={'/'} className="">Continuar comprando</Link>
                 </div>
             </div>
         </div>

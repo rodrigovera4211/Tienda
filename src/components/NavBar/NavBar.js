@@ -1,10 +1,17 @@
 import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
-import CartWidget from "../CartWidget/CarWidget"
+import CartWidget from "../CartWidget/CartWidget"
 import Logo from  '../Logo/Logo.js'
 import Contact from '../Contact/Contact'
+import { useContext } from 'react'
+import  CartContext  from '../../context/CartContext'
 
-const NavBar = () => { //{ title: 'ecommerce ', color='red'}
+
+
+const NavBar = () => {
+  
+  const {  getQuantity  } = useContext ( CartContext)
+  //{ title: 'ecommerce ', color='red'}
 
   return (
       
@@ -24,10 +31,9 @@ const NavBar = () => { //{ title: 'ecommerce ', color='red'}
           <NavLink to='/category/pantalones' className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Pantalones</NavLink>
           <NavLink to='/category/Camperas' className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Camperas</NavLink>
           <NavLink to='/category/Gorras' className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Gorras</NavLink>
-      
+    
         </div>
-         <Contact />
-               <CartWidget/>
+              {  getQuantity > 0   &&  <CartWidget/> }
       </nav>
   )
 }

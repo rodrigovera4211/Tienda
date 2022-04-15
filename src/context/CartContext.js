@@ -18,6 +18,19 @@ export const CartContextProvider = ({ children }) => {
         setCart([])
     }
 
+
+
+
+    const isInCart =(id) =>{
+
+      return cart.some(prod =>prod.id ===id )
+
+
+    }
+
+
+
+
     const removeItem = (id) => {
     cart.map((prod) => {
       if (prod.id === id) {
@@ -53,6 +66,7 @@ const getPrice = () => {
   return (
     <Context.Provider value={{
       cart,
+      isInCart,
       addItem,
       clearCart,
       getQuantity,

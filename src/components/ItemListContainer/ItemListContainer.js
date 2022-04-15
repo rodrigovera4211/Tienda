@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import ItemList from '../ItemList/ItemList'
 import { getProducts } from '../../asyncmock'
 import { useParams } from 'react-router-dom' 
+import { queryAllByAltText } from '@testing-library/react'
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
@@ -17,13 +18,31 @@ const ItemListContainer = () => {
     useEffect(() => {
         setLoading(true)
         
-        getProducts(categoryId).then(items => {
-            setProducts(items)
-        }).catch(err  => {
-            console.log(err)
-        }).finally(() => {
-            setLoading(false)
-        })
+        // getProducts(categoryId).then(items => {
+        //     setProducts(items)
+        // }).catch(err  => {
+        //     console.log(err)
+        // }).finally(() => {
+        //     setLoading(false)
+        // })
+            // const collectionRef = categoryId
+            // ?query(collection(firestoredb,'products'), where ('category', '==', categoryId), limit(10) )
+            // : collection(firestoreDB,'products')
+
+            // getDocs (collectionRef).them(querysnapshot =>{
+            // console.log(querySnapshot.size)
+            // const products = querySnapshot.docs.map( doc => {
+            //     return {id:doc.id, ...doc.data ()}
+            // })
+            // setProducts (products)
+
+            // }).catch(error => {
+            //     console.log(error)
+            // }).finally(()=>{
+            //     setLoading(false)
+            // })
+
+
 
         return (() => {
             setProducts([])

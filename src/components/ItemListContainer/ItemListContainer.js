@@ -7,10 +7,10 @@ import { queryAllByAltText } from '@testing-library/react'
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState(true)
+    
 
     const { categoryId } = useParams()
-
+const [loading, setLoading] = useState(true)
     const onResize = () => {
         console.log('cambio el tamaño de la ventana')
     }
@@ -18,13 +18,13 @@ const ItemListContainer = () => {
     useEffect(() => {
         setLoading(true)
         
-        // getProducts(categoryId).then(items => {
-        //     setProducts(items)
-        // }).catch(err  => {
-        //     console.log(err)
-        // }).finally(() => {
-        //     setLoading(false)
-        // })
+        getProducts(categoryId).then(items => {
+            setProducts(items)
+        }).catch(err  => {
+            console.log(err)
+        }).finally(() => {
+            setLoading(false)
+        })
             // const collectionRef = categoryId
             // ?query(collection(firestoredb,'products'), where ('category', '==', categoryId), limit(10) )
             // : collection(firestoreDB,'products')

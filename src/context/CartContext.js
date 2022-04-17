@@ -63,6 +63,10 @@ const getPrice = () => {
         return count
     }
 
+
+  
+
+
   return (
     <Context.Provider value={{
       cart,

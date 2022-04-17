@@ -2,18 +2,31 @@ import './CartWidget.css'
 import { useContext } from 'react';
 import { Link } from 'react-router-dom'
 import CartContext from '../../context/CartContext'
+import { captureRejections } from 'events';
+import carrito from '../CartWidget/carrito.svg'
 
 
 const CartWidget = () => {
-  const { getQuantity } = useContext(CartContext)
 
+    const { getQuantity } = useContext(CartContext)
+    if (getQuantity() !== 0) {
     return (
-               <Link to={'/cart'} className="CartWidget">
-              <img src="https://thumbs.dreamstime.com/z/icono-rojo-del-carro-de-compras-96010166.jpg" alt="carrito de compras" height='50px'   />
-            { getQuantity() }
-         
+        <div>
+            
+            <div className="bloqueCarritoCentrado">
+            <div className="bloqueCarrito">
+                <Link to={'/cart'} className="CartWidget">
+                <img className="" src={carrito} alt="carrito de compras" height={50}/>
+                { getQuantity() }
         </Link>
-    );
+            </div>
+            </div>
+        </div>
+    )} else {
+        return(
+            <></>
+        )
+    }
 }
 
 export default CartWidget

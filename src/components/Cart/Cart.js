@@ -20,14 +20,14 @@ const Cart = () => {
             <div >
                 <table className="items">
                     <tbody>
-                        {cart.map(prod => <li key={prod.id}><td><b>{prod.name}</b> x {prod.quantity} unidades </td><td>{prod.price * prod.quantity}  ({prod.price} c/u)</td><td><button className="botonesTabla" onClick={() => { removeItem(prod.id) }}> Eliminar unidad</button></td></li>)}
+                        {cart.map(prod => <li key={prod.id}><td><b>{prod.name}</b> x {prod.quantity} unidades </td><td>{prod.price * prod.quantity}  ({prod.price} c/u)</td><td><button className="boton" onClick={() => { removeItem(prod.id) }}> Eliminar unidad</button></td></li>)}
                         <tr><th>Total a pagar</th>
                             <th>{getPrice()} </th>
-                            <th><button className="" onClick={clearCart}>Vaciar carrito</button></th></tr>
+                            <th><button className="boton" onClick={clearCart}>Vaciar carrito</button></th></tr>
                             </tbody>       
                 </table>
                 <div className="">
-                <button onClick={()=>console.log("Usted abono correctamente")} className="">Terminar compra</button>
+                <button onClick={()=>console.log("Usted abono correctamente")} className="boton1">Terminar compra</button>
                 </div>
                 <div className="">
                 <Link to={'/'} className="">Continuar comprando</Link>

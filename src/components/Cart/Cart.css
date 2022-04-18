@@ -1,5 +1,5 @@
 .Titulo { display: block;
-width: 150px;
+width: 400px;
 padding: 30px;
 margin: 30px;
 font-size: 10px;
@@ -13,3 +13,50 @@ border-radius: 10px;
 font-size: 30px;
 
    }
+.boton {
+    /* color: #8C30F5; */
+    text-decoration: none;
+    border-radius: 25;
+    margin: 0 50px;
+    /* TODO */
+    width: auto;
+    padding: 20px;
+    font-size: 20px;
+    background: green;
+    border-radius: 8px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
+
+
+
+.boton1 {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+border: none;
+border-style: none;
+cursor: pointer;
+outline: inherit;
+    text-decoration: none;
+    border-radius: 25;
+    margin: 0 50px;
+    /* TODO */
+    width: auto;
+    padding: 20px;
+    font-size: 20px;
+
+     }

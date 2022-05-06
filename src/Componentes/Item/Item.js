@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import "../../App.css"
-//Se pasan todas las props desestrucutadas necesarias puede usarse cada prop individualmente, name, price, etc
+
 
 
     const Item = ({ id, name, img, price}) => {

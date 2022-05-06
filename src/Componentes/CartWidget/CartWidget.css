@@ -1,0 +1,34 @@
+.logoEstilo {
+    width: 100px;
+    border-radius: 60%;
+  
+  }
+
+   .titulonav {
+    display: block;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  }
+
+  .carrito {
+    width: 80%;
+  }
+
+  .bloqueCarrito {
+    background-color:#009ffd ;
+    background-image: #009ffd ;
+    color: black;
+    width: 100px;
+    border-radius: 10px;
+    margin: auto;
+    border: solid 2px black;
+  }
+
+  .bloqueCarritoCentrado {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  }
+
+  .bloqueCarrito2{
+    background-color: black;
+  }

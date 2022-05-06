@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+ 
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.imagenCards {
+  width: 200px;
+  background-color: black;
+  border: solid 2px black;
+}
+
+.contenedorCards {
+  background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  width: 100%;
+  border-radius: 10px;
+  border: solid 2px white;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.contenedorExternoMargen{
+  margin: 100px 100px 0px 100px;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  background-image: url('https://images.pexels.com/photos/32997/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.contenedorPadreCards {
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px 200px 0px 200px;
+}
+
+.ContenedorDetalle{
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contenedorNomrbreImgDetalle{
+  border: solid 2px white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.imagenDetalle {
+  width: 400px;
+}
+
+.ContenedorContadorDetail{
+  width: 300px;
+  margin: auto;
+}
+
+.contenedorDetalle{
+  width: 600px;
+  margin-bottom: 100px;
+  border-radius: 30%;
+}
+
+.botonIrAlCarrito{
+  text-decoration: none;
+  margin: 100px 100px 0px 100px;
+  background-color:#AED6F1 ;
+  color: white;
+  border-radius: 10px;
+  border: solid 2px white;
+  padding: 5px;
+  margin: auto;
+}
+
+.bloqueCart {
+  color: white;
+}
+
+.bloqueTabla {
+  margin: auto;
+  margin-top: 50px;
+  background-image:blue;
+  padding: 10px;
+  text-align: center;
+  background-image: url('https://images.pexels.com/photos/32997/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.botonesTabla {
+  padding: 10px;
+  color: azure;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.botonesTablaPagar {
+  padding: 10px 100px 10px 100px;
+  color: azure;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  border-radius: 10px;
+}
+
+.bloqueBotonPagar {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.linkContinuarComprando {
+  text-decoration: none;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  color: aliceblue;
+  border: solid 1px red;
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+}
+
+.bloqueLinkContinuar {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.App-header {
+  background-image: url(fondo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; 
+}
+
+.botonesTablaAgregar{
+  padding: 3px;
+  color: azure;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  border-radius: 10px;
+  margin-top: 30px;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.form{width:340px;height:230px;
+  background:#009ffd;
+  border-radius:8px;
+  box-shadow:0 0 10px -10px #000;margin:calc(50vh - 220px)
+   auto;padding:20px 30px;max-width:calc(100vw - 40px);
+   box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+
+   .formu{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c;
+
+
+   }
+
+   .bloqueformu {
+    margin: auto;
+    margin-top: 5px;
+
+    padding: 5px;
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/32997/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }

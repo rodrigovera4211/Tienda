@@ -1,0 +1,32 @@
+
+.divContador {
+    padding: 10px;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+.contadorBotonAgregar {
+    padding: 5px 10px 5px 10px;
+}
+
+.contadorBotonEstilo {
+    padding: 20px 20px 0px 20px;
+    background-color:#009ffd;
+    border-radius: 40%;
+    text-decoration: dotted;
+}
+
+.contenedorContadorBotones {
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 1px white;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    margin: auto;
+}
+
+.contenedorContadorCentrado {
+    
+    width: 100%;
+}
